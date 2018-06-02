@@ -4,6 +4,7 @@ syntax on
 filetype plugin indent on
 set nu
 colorscheme gruvbox
+" colorscheme monokai
 set autoindent
 set smartindent
 set smarttab
@@ -24,6 +25,8 @@ map <Leader>n :NERDTreeToggle<CR>
 map <Leader>i :IndentLinesToggle<CR>
 map <Leader>m :set nonu<CR>
 map <Leader>b :set nu<CR>
+map <Leader>c :w !pbcopy<CR>
+map <Leader>x :x<CR>
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
