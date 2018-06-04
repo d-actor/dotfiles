@@ -5,6 +5,7 @@ filetype off
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 " Bundles
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
@@ -14,8 +15,8 @@ Plugin 'chrisbra/colorizer'
 Plugin 'kien/ctrlp.vim'
 Plugin 'yggdroot/indentline'
 Plugin 'tomasr/molokai'
-Plugin 'omnisharp/omnisharp-vim'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'omnisharp/omnisharp-vim'
 Plugin 'bling/vim-airline'
 Plugin 'dkprice/vim-easygrep'
 Plugin 'isruslan/vim-es6'
@@ -26,12 +27,12 @@ Plugin 'tpope/vim-rails'
 Plugin 'justinmk/vim-sneak'
 Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ajh17/vimcompletesme'
+Plugin 'posva/vim-vue'
 
 call vundle#end()
 filetype plugin indent on
 
 syntax on
-filetype plugin indent on
 set nu
 colorscheme gruvbox
 "colorscheme monokai
