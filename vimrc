@@ -30,8 +30,8 @@ Plugin 'ajh17/vimcompletesme'
 Plugin 'posva/vim-vue'
 
 call vundle#end()
-filetype plugin indent on
 
+filetype plugin indent on
 syntax on
 set nu
 colorscheme gruvbox
@@ -49,7 +49,8 @@ set showmatch
 let g:airline_theme='dark_minimal'
 set undodir=~/.vim/undodir
 set undofile
-let NERDTreeIgnore=['\.DS_Store$']
+let NERDTreeIgnore=['\.DS_Store$', '.swp']
+let NERDTreeShowHidden=1
 let g:vim_jsx_pretty_colorful_config = 1
 
 map <Leader>n :NERDTreeToggle<CR>
@@ -57,7 +58,8 @@ map <Leader>i :IndentLinesToggle<CR>
 map <Leader>c :w !pbcopy<CR>
 map <Leader>x :x<CR>
 nnoremap <Leader>m :set nonu!<CR>
-nnoremap <Leader>s :w<cr>
+nnoremap <Leader>s :w<CR>
+map <Leader>q :q!<CR>
 
 " clone paragraph
 noremap cp yap<S-}>p
