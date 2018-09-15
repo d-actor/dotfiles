@@ -11,6 +11,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH=/Users/danielactor/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 export PATH=/Applications/Postgres.app/Contents/Versions/10/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 eval export PATH="/Users/danielactor/.rbenv/shims:${PATH}"
+eval "$(rbenv init -)"
 export PATH="$HOME/Desktop/arc/arcanist/bin:$PATH"
 export PATH="$PATH:$(yarn global bin)"
 export RBENV_SHELL=zsh
@@ -33,6 +34,7 @@ rbenv() {
 
 # aliases
 alias code='open -a "Visual Studio Code"'
+alias oni='open -a "Oni"'
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 # alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
@@ -63,5 +65,8 @@ alias .3='cd ../../../'
 alias .4='cd ../../../../'
 alias .5='cd ../../../../../'
 alias .6='cd ../../../../../../'
-alias src='source ~/.zshrc'
+alias proj='cd Desktop/Projects'
+alias dpl='cd Desktop/DPL'
+alias freelance='cd Desktop/Freelance'
+alias config='vim ~/.config/nvim/init.vim'
 

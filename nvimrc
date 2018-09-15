@@ -11,7 +11,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'tpope/vim-fugitive'
 Plugin 'chrisbra/colorizer'
-Plugin 'kien/ctrlp.vim'
 Plugin 'yggdroot/indentline'
 Plugin 'tomasr/molokai'
 Plugin 'vim-airline/vim-airline-themes'
@@ -27,6 +26,7 @@ Plugin 'bronson/vim-trailing-whitespace'
 Plugin 'ajh17/vimcompletesme'
 Plugin 'posva/vim-vue'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'junegunn/fzf'
 
 call vundle#end()
 
@@ -53,14 +53,19 @@ let NERDTreeIgnore=['\.DS_Store$', '.swp']
 let NERDTreeShowHidden=1
 let g:vim_jsx_pretty_colorful_config = 1
 
+" leader mappings
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>i :IndentLinesToggle<CR>
 map <Leader>c :w !pbcopy<CR>
 map <Leader>x :x<CR>
-nnoremap <Leader>m :set nonu!<CR>
-nnoremap <Leader>s :w<CR>
+map <Leader>m :set nonu!<CR>
+map <Leader>s :w<CR>
 map <Leader>q :q!<CR>
+map <Leader>g :FixWhitespace<CR>
+map <Leader>p :FZF<CR>
+map <Leader>f :%s /
 
+" other mappings
 " clone paragraph
 noremap cp yap<S-}>p
 map <C-n> :NERDTreeToggle<CR>
