@@ -33,6 +33,7 @@ rbenv() {
 }
 
 # aliases
+alias c='clear'
 alias code='open -a "Visual Studio Code"'
 alias oni='open -a "Oni"'
 export CLICOLOR=1
