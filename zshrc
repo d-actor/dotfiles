@@ -38,7 +38,6 @@ alias code='open -a "Visual Studio Code"'
 alias oni='open -a "Oni"'
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
-# alias vim='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias vim='nvim'
 alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -GFh'
@@ -70,4 +69,5 @@ alias proj='cd Desktop/Projects'
 alias dpl='cd Desktop/DPL'
 alias freelance='cd Desktop/Freelance'
 alias config='vim ~/.config/nvim/init.vim'
+
 
