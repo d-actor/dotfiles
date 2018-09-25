@@ -12,7 +12,7 @@ export PATH=/Users/danielactor/.rbenv/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/loc
 export PATH=/Applications/Postgres.app/Contents/Versions/10/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
 eval export PATH="/Users/danielactor/.rbenv/shims:${PATH}"
 eval "$(rbenv init -)"
-export PATH="$HOME/Desktop/arc/arcanist/bin:$PATH"
+export PATH="$HOME/arc/arcanist/bin:$PATH"
 export PATH="$PATH:$(yarn global bin)"
 export RBENV_SHELL=zsh
 source '/usr/local/Cellar/rbenv/1.1.1/libexec/../completions/rbenv.zsh'
@@ -39,7 +39,6 @@ alias oni='open -a "Oni"'
 export CLICOLOR=1
 export LSCOLORS=GxFxCxDxBxegedabagaced
 alias vim='nvim'
-alias subl='/Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl'
 alias ls='ls -GFh'
 alias ll='ls -l'
 alias be='bundle exec'
@@ -69,5 +68,4 @@ alias proj='cd Desktop/Projects'
 alias dpl='cd Desktop/DPL'
 alias freelance='cd Desktop/Freelance'
 alias config='vim ~/.config/nvim/init.vim'
-
 
